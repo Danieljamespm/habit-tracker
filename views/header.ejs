@@ -1,50 +1,34 @@
-<nav class="navbar navbar-expand-lg sticky-top overflow-hidden shadow">
-        
-    <!-- container adapting according to width -->
-    <div class="container-fluid mx-3">
-        
-        <!-- name and logo of website with link to home page -->
-        <a class="navbar-brand" href="/">
-            <!-- name of site -->
-            <span class="h3 d-none d-md-inline"> 
-                Habit Tracker
-            </span>
-
-        </a>
-        
-        <!-- hidden button visible on smaller screen  -->
-        <button class="navbar-toggler" type="button" 
-                data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" 
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" 
-                aria-label="Toggle navigation">
-
-            <!-- icon of button -->
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-
-        <!-- div containg links for different page -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-            <div class="d-flex">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
-
-                    <!-- link for Home page -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">
-                            <strong class="h5">Home</strong>
-                        </a>
-                    </li>
-
-                    <!-- link for Favourite Hero page -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="/my-habits">
-                            <strong class="h5">Progress</strong> 
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>
+
+
+
