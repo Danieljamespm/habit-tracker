@@ -31,7 +31,7 @@ app.use(expressLayouts)
 
 //setting up routes
 app.use('/', mainRoutes)
-app.use('/habits', habitRoutes)
+// app.use('/habits', habitRoutes)
 
 
 
