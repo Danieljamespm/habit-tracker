@@ -6,17 +6,47 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="d-md-flex justify-content-between align-items-center">
-    <form action="/createHabit" method='POST'>
+    <div class="h-75 d-flex flex-column justify-content-between align-items-center">
+        <!-- form for adding new habits to DB -->
+        <form action="/createHabit" method='POST'>
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Enter New Habit" name="newHabit" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary bg-dark " type="submit" id="button-addon2">Add Habit</button>
+            <button class="btn btn-outline-secondary bg-dark text-light " type="submit" id="button-addon2">Add Habit</button>
           </div>
     </form>
+
+    <div
+    id="habitList"
+    class="container h-100 mb-2 overflow-auto `overflow-x-hidden p-1 px-2 rounded shadow-sm bg-success-subtle"
+  >
+    <!-- heading -->
+    <h1 class="text-center">Your Habits</h1>
+
+    <!-- list of all the habits -->
+    <% for (let i of myHabits) { %>
+
+    <!-- card of a single habit -->
+    <div
+      class="w-100 h-auto d-flex justify-content-between align-items-center text-light bg-dark my-2 p-2 shadow-sm rounded fw-bold list-item"
+    >
+      <!-- name of habit -->
+      <div class="px-1"><%= i.name %></div>
+
+      <!-- number of days on which the task is done in past week -->
+      <!-- task status for today -->
+      <div class="px-1">
+        <%= i.completedDays %> / 7 Days | Today: <%= i.weeklyStatus[6] ===
+        'true' ? 'Done' : 'Not Done' %>
+        <i class="bi bi-trash-fill"></i>
+      </div>
     </div>
 
-   
+    <% } %>
+  </div>
+    </div>
 
     
+
+   
 </body>
 </html>
