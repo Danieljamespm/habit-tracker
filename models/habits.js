@@ -29,7 +29,7 @@ const habitSchema = new mongoose.Schema({
 })
 
 //compiling scehma into a model
-const Habits = mongoose.model('Habits', habitsSchema)
+const Habits = mongoose.model('Habits', habitSchema)
 
 //exporting schema
 module.exports = Habits
