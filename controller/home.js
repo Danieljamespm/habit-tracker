@@ -9,9 +9,11 @@ module.exports = {
             //getting all the habits from database
             //rendering homepage
             const myHabits = await Habits.find({})
-            res.render('home.ejs')
-            //giving all the habits a variable name
-            myHabits: myHabits
+            res.render('home.ejs', {
+                
+                //giving all the habits a variable name
+                myHabits: myHabits
+            })
             
         } catch (err) {
             console.log(err)
