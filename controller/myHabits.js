@@ -26,7 +26,7 @@ module.exports = {
             date = `${date.slice(0,3)}, ${date.slice(3,15)}`
 
             //days of past weeek
-            const pastWeek = CalculateDayofWeek(new Date())
+            const pastWeek = CalculateDayOfWeek(new Date())
 
             //getting the habits from DB
             const myHabits = await Habits.find({})

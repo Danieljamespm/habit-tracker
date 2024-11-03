@@ -11,6 +11,6 @@ const myHabitsController = require('../controller/myHabits')
 router.get('/', myHabitsController.home)
 
 //route to change habit status
-route.get('/toggle-status', myhabitsController.toggleStatus)
+router.get('/toggle-status', myHabitsController.toggleStatus)
 
 module.exports = router
