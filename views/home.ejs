@@ -27,17 +27,16 @@
 
     <!-- card of a single habit -->
     <div
-      class="w-100 h-auto d-flex justify-content-between align-items-center text-light bg-dark my-2 p-2 shadow-sm rounded fw-bold list-item"
-    >
+      class="w-100 h-auto d-flex justify-content-between align-items-center text-light bg-dark my-2 p-2 shadow-sm rounded fw-bold list-item">
       <!-- name of habit -->
-      <div class="px-1"><%= i.name %></div>
+      <div class="px-1 myHabits" data-id='<%=i._id%>'><%= i.name %></div>
 
       <!-- number of days on which the task is done in past week -->
       <!-- task status for today -->
       <div class="px-1">
         <%= i.completedDays %> / 7 Days | Today: <%= i.weeklyStatus[6] ===
         'true' ? 'Done' : 'Not Done' %>
-        <i class="bi bi-trash-fill"></i>
+        <span class="delete"><i class="bi bi-trash-fill"></i></span>
       </div>
     </div>
 
@@ -47,6 +46,6 @@
 
     
 
-   
+    
 </body>
 </html>

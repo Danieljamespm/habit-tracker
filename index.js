@@ -29,6 +29,8 @@ app.use(express.static('public'))
 //using layouts
 app.use(expressLayouts)
 
+app.use(express.json())
+
 //setting up routes
 app.use('/', mainRoutes)
 // app.use('/habits', habitRoutes)

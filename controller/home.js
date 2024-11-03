@@ -42,5 +42,15 @@ module.exports = {
         } catch (err) {
             console.log(err)
         }
+    },
+    deleteHabit : async (req, res)=>{
+        console.log(req.body.habitIDFromJSFile)
+        try {
+            await Habits.findOneAndDelete({_id:req.body.habitIDFromJSFile})
+            console.log(`Deleted Habit ${req.body.habitIDFromJSFile}`)
+            res.json('Deleted It')
+        } catch (err) {
+            console.log(err)
+        }
     }
 }

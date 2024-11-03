@@ -8,5 +8,7 @@ router.get('/', homeController.home)
 //route for post request to create habits
 router.post('/createHabit', homeController.createHabit)
 
+router.delete('/deleteHabit', homeController.deleteHabit)
+
 
 module.exports = router
