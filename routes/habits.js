@@ -8,4 +8,9 @@ const router = express.Router()
 const myHabitsController = require('../controller/myHabits')
 
 //get reqeust controller for main page
-router.get('/', myHabits.home)
+router.get('/', myHabitsController.home)
+
+//route to change habit status
+route.get('/toggle-status', myhabitsController.toggleStatus)
+
+module.exports = router
