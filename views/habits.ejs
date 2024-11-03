@@ -1,12 +1,12 @@
 <div class="w-100 h-100 rounded p-4 overflow-auto">
     <div class="w-100">
       <!-- page navbar -->
-      <nav class="navbar bg-white rounded shadow-sm">
+      <nav class="navbar bg-success-subtle rounded shadow-sm">
         <div class="container-fluid">
           <!-- heading -->
-          <span class="navbar-brand mb-0 h1 text-primary"> Your Habits </span>
+          <span class="navbar-brand mb-0 h1 text-dark"> Your Habits </span>
           <!-- date -->
-          <span class="navbar-brand mb-0 h1 text-primary"> <%= date %> </span>
+          <span class="navbar-brand mb-0 h1 text-dark"> <%= date %> </span>
         </div>
       </nav>
   
@@ -19,7 +19,7 @@
   
         <!-- single habit -->
         <div
-          class="w-75 m-2 h-auto rounded shadow p-2 d-flex flex-column list-item text-white"
+          class="w-75 m-2 h-auto rounded shadow p-2 d-flex flex-column list-item text-dark bg-success-subtle"
         >
           <div class="w-100 d-flex justify-content-between p-2">
             <div class="fw-bold fs-5">
@@ -41,7 +41,7 @@
             <% i.weeklyStatus.map((day,index) => { %>
   
             <!-- a single day card -->
-            <div class="card mb-3 shadow day-card" style="max-width: 10rem">
+            <div class="card mb-3 shadow day-card bg-dark-subtle text-dark" style="max-width: 10rem">
               <div class="card-header fw-bolder"><%= weekDays[index] %></div>
               <div
                 class="card-body text-secondary d-flex justify-content-between"
