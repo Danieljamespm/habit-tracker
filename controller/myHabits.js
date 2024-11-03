@@ -43,7 +43,7 @@ module.exports = {
 
         } catch (err) {
             console.log(err)
-            res.redirect('back')
+            res.redirect('/')
         }
     },
     //toggling status of habit on specific day
@@ -83,7 +83,7 @@ module.exports = {
             //save in DB
             await habit.save()
             //return response
-            return res.redirect('back')
+            return res.redirect('/my-habits')
         } catch (err) {
             console.log(err.message)
             res.redirect('back')
