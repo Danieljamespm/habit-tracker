@@ -83,7 +83,7 @@ module.exports = {
             //save in DB
             await habit.save()
             //return response
-            return res.redirect('/my-habits')
+            return res.redirect('/')
         } catch (err) {
             console.log(err.message)
             res.redirect('back')
