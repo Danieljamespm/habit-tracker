@@ -10,7 +10,7 @@ router.post('/createHabit', homeController.createHabit)
 
 router.delete('/deleteHabit', homeController.deleteHabit)
 
-router.use('/my-habits', require('./myHabits'))
+router.use('/my-habits', require('./habits'))
 
 
 module.exports = router
